@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abbas Intro</title>
+</head>
+<body>
+<style scoped>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo-container {
+		margin-top: 20vh;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		will-change: transform;
+	}
+
+	@keyframes drop-in {
+		0% {
+			transform: scale(0) rotate(-180deg);
+		}
+		65% {
+			transform: scale(1.05) rotate(10deg);
+			animation-timing-function: cubic-bezier(0.75,0,0.5,1);
+		}
+		100% {
+			transform: scale(1) rotate(0deg);
+		}
+	}
+	@-o-keyframes drop-in {
+		0% {
+			-o-transform: scale(0) rotate(-180deg);
+		}
+		65% {
+			-o-transform: scale(1.05) rotate(10deg);
+			-o-animation-timing-function: cubic-bezier(0.75,0,0.5,1);
+		}
+		100% {
+			-o-transform: scale(1) rotate(0deg);
+		}
+	}
+	@-moz-keyframes drop-in {
+		0% {
+			-moz-transform: scale(0) rotate(-180deg);
+		}
+		65% {
+			-moz-transform: scale(1.05) rotate(10deg);
+			-moz-animation-timing-function: cubic-bezier(0.75,0,0.5,1);
+		}
+		100% {
+			-moz-transform: scale(1) rotate(0deg);
+		}
+	}
+	@-webkit-keyframes drop-in {
+		0% {
+			-webkit-transform: scale(0) rotate(-180deg);
+		}
+		65% {
+			-webkit-transform: scale(1.05) rotate(10deg);
+			-webkit-animation-timing-function: cubic-bezier(0.75,0,0.5,1);
+		}
+		100% {
+			-webkit-transform: scale(1) rotate(0deg);
+		}
+	}
+
+	.animate-in {
+		animation-name: drop-in;
+		-o-animation-name: drop-in;
+		-moz-animation-name: drop-in;
+		-webkit-animation-name: drop-in;
+		animation-duration: 1.2s;
+		-o-animation-duration: 1.2s;
+		-moz-animation-duration: 1.2s;
+		-webkit-animation-duration: 1.2s;
+		animation-timing-function: ease;
+		-o-animation-timing-function: ease;
+		-moz-animation-timing-function: ease;
+		-webkit-animation-timing-function: ease;
+	}
+</style>
+
+<div class="logo-container">
+	<img src="abbas_logo_minified.svg" class="unselectable animate-in" id="logo" alt="Abbas logo">
+</div>
+
+</body>
+</html>
